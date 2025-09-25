@@ -1,0 +1,59 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.health-card {
+    transition: all 0.3s ease;
+}
+.health-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.nav-link {
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+.nav-link.active, .nav-link:hover {
+    color: #2563EB; /* text-blue-600 */
+    border-bottom-color: #2563EB;
+}
+
+/* Mobile Nav Link specific styles */
+.mobile-nav-link {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.mobile-nav-link:hover {
+    background-color: #f1f5f9; /* bg-slate-100 */
+}
+.mobile-nav-link.active {
+    background-color: #eff6ff; /* bg-blue-50 */
+    color: #2563EB; /* text-blue-600 */
+    font-weight: 600;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9; /* bg-slate-100 */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #94a3b8; /* bg-slate-400 */
+    border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* bg-slate-500 */
+}
+.date-selector-btn {
+    transition: all 0.2s ease-in-out;
+}
+.date-selector-btn.active {
+    background-color: #3B82F6; /* bg-blue-500 */
+    color: white;
+    font-weight: 600;
+}
